@@ -17,8 +17,9 @@ python netcdf_scrubber.py input_path output_csv_file
 `output_csv_file` is the desired path and file name for the .csv format output file
 
 This script extracts two types of metadata from the files:
-    - global attributes
-    - attributes of the data variable
+
+- global attributes
+- attributes of the data variable
     
 It is designed to work with CMIP5 output, for which each data variable is packaged in a unique file.
 
@@ -26,9 +27,10 @@ The data variable is identified from the filename. This won't work correctly if 
 don't follow standard CMIP5 conventions.
 
 Dependencies:
-    - python 3
-    - pandas
-    - xarray
+
+- python 3
+- pandas
+- xarray
     
 Internally this builds a pandas.DataFrame object to hold all the metadata.
 Creating output in formats other than .csv would be trivial since pandas can readily convert to other formats.
